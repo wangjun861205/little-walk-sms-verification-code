@@ -1,0 +1,16 @@
+[package]
+name = "little-walk-sms-verification-code"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4.4.0"
+dotenv = "0.15.0"
+env_logger = "0.10.0"
+mongodb = "2.7.0"
+nb-from-env = "0.2.0"
+serde = "1.0.190"
+sms-verification-code-service = { git = "https://github.com/wangjun861205/sms-verification-code-service.git" }
+tokio = { version = "1.33.0", features = ["sync"] }
