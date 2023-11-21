@@ -1,0 +1,10 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "start mongodb container",
+      "command": "[[ $(docker ps -f 'name=little-walk-sms-verification-code-mongo' --format='{{.Names}}') == 'little-walk-sms-verification-code-mongo' ]] || docker start little-walk-sms-verification-code-mongo",
+      "type": "shell"
+    }
+  ]
+}
